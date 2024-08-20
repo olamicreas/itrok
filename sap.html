@@ -85,21 +85,26 @@
 }
 
 .carousel-caption {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
     position: absolute;
-    top: 55%;
+    top: 55%; /* Adjust this value to move the caption up or down */
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    z-index: 10;
+    min-width: 100vh;
+    
 }
 
 .carousel-caption h2 {
-    font-size: 4vw; /* Default size for larger screens */
-    font-weight: bold;
-    color: white;
+    font-size: 5vw !important;
+    color: white !important;
+    font-weight: bold !important;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7) !important;
     
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
-
 /* Adjust font size for smaller screens */
 @media (max-width: 1200px) {
     .carousel-caption h2 {
@@ -114,10 +119,15 @@
 }
 
 @media (max-width: 576px) {
+    .carousel-caption {
+        padding: 50px;
+        min-width: 100%;
+    }
     .carousel-caption h2 {
-        font-size: 10vw;
+        font-size: 7vw !important;
     }
 }
+
 .erp-section {
     display: flex;
     flex-direction: column;
@@ -444,7 +454,7 @@
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <div class="carousel-image image1"></div>
-                <div id="caption1" class="carousel-caption d-none d-md-block" style="min-width: 100vh;">
+                <div id="caption1" class="carousel-caption d-none d-md-block">
                     <h2>SAP C/4HANA and SAP S/4HANA</h2>
                     <div style="padding: 20px;">
                     

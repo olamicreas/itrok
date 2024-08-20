@@ -85,21 +85,26 @@
 }
 
 .carousel-caption {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
     position: absolute;
-    top: 55%;
+    top: 55%; /* Adjust this value to move the caption up or down */
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    z-index: 10;
+    min-width: 100vh;
+    
 }
 
 .carousel-caption h2 {
-    font-size: 4vw; /* Default size for larger screens */
-    font-weight: bold;
-    color: white;
+    font-size: 5vw !important;
+    color: white !important;
+    font-weight: bold !important;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7) !important;
     
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
-
 /* Adjust font size for smaller screens */
 @media (max-width: 1200px) {
     .carousel-caption h2 {
@@ -114,10 +119,18 @@
 }
 
 @media (max-width: 576px) {
+    .carousel-caption {
+        padding: 50px;
+        min-width: 100%;
+    }
     .carousel-caption h2 {
-        font-size: 10vw;
+        font-size: 7vw !important;
     }
 }
+
+
+
+
 .erp-section {
     display: flex;
     flex-direction: column;
@@ -309,7 +322,7 @@
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <div class="carousel-image image1"></div>
-                <div id="caption1" class="carousel-caption d-none d-md-block" style="min-width: 100vh;">
+                <div id="caption1" class="carousel-caption d-none d-md-block">
                     <h2>TROK TECHNOLOY CHANGE THE GAME</h2>
                     <div style="padding: 20px;">
                     <p>Enterprise integration solution, Training and consulting services provider </p>
@@ -318,14 +331,14 @@
             </div>
             <div class="carousel-item">
                 <div class="carousel-image image2"></div>
-                <div id="caption2" class="carousel-caption d-none d-md-block" style="min-width: 100vh;">
+                <div id="caption2" class="carousel-caption d-none d-md-block">
                     <h2>WE BOOST YOUR COMPANY'S TRANSFORMATION</h2>
                     <p>We give you the perfect balance between IT operations, integrations and innovation</p>
                 </div>
             </div>
             <div class="carousel-item">
                 <div class="carousel-image image3"></div>
-                <div id="caption3" class="carousel-caption d-none d-md-block" style="min-width: 100vh;">
+                <div id="caption3" class="carousel-caption d-none d-md-block">
                     <h2>INNOVATION CONSULTING ON/OFF SITE TRAINING</h2>
                     <p>To support your digital transformation, you need expert IT business like us</p>
                 </div>
@@ -946,6 +959,17 @@
       });
 
 
+    </script>
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function () {
+            var carouselCaptions = document.querySelectorAll('.carousel-caption');
+
+            carouselCaptions.forEach(function (caption) {
+                caption.style.display = 'block';
+                caption.style.visibility = 'visible';
+                caption.style.opacity = '1';
+            });
+        });
     </script>
     <!-- Template Main JS File -->
     <script src="assets/javascripts/main.js"></script>
