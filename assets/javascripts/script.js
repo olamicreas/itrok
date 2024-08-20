@@ -1,5 +1,9 @@
 /* ---- particles.js config ---- */
 
+function contact(){
+    window.location.href='contact.html'
+  }
+
 particlesJS("particles-js", {
   "particles": {
     "number": {

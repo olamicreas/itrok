@@ -64,7 +64,6 @@
 body {
   font-family: var(--font-default);
   color: var(--text-color);
- 
   transition: 0.5s background ease;
 }
 
@@ -88,6 +87,10 @@ body.dark {
   --box-shadow-color: rgb(12 109 224 / 69%);
 }
 
+/* Exclude black background color */
+body.dark div:not([style*="background-color: #000000"]) {
+  background-color: var(--theme-color-dark);
+}
 
 #darkmode-button{
     border-radius: 50%;

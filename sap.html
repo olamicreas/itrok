@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Trok Technology - IT Solutions & Business Services Multipurpose Responsive Website Template</title>
+    <meta content="" name="HSG - The future of software development ">
+    <meta name="description" content="Technoit - IT Solutions & Business Services Multipurpose Responsive Website Template">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta content="" name="ZRTHEMES">
+    <!-- Favicons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="assets/images/favicon.png" rel="icon">
+    <link href="assets/images/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&amp;family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&amp;family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&amp;display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&amp;display=swap" rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/stylesheets/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <!-- Main CSS File -->
+    <link href="assets/stylesheets/styles.css" rel="stylesheet">
+    <style>
+/* CSS for carousel image animation */
+.carousel-item {
+    position: relative;
+    height: 100vh; /* Adjust height as needed */
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+  .carousel-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    animation: zoomRotate 200s linear infinite;
+}
+
+
+.carousel-image.image1 {
+    background-image: url('assets/images/image1.jpg');
+}
+
+.carousel-image.image2 {
+    background-image: url('assets/images/image2.jpg');
+}
+
+.carousel-image.image3 {
+    background-image: url('assets/images/image3.jpg');
+}
+
+
+@keyframes zoomRotate {
+    0% {
+        transform: scale(1,1) rotate(0deg);
+    }
+    100% {
+        transform: scale(3.9,3.9) rotate(90deg);
+    }
+}
+
+
+.carousel-image.image2 {
+    background-image: url('https://troktechnology.net/wp-content/uploads/2020/12/jet-engine-371412_1920.jpg');
+}
+
+.carousel-image.image3 {
+    background-image: url('https://troktechnology.net/wp-content/uploads/2020/12/lamp-3489395_1920.jpg');
+}
+
+.carousel-image.image1 {
+    background-image: url('https://images.pexels.com/photos/3568520/pexels-photo-3568520.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.carousel-caption h2 {
+    font-size: 4vw; /* Default size for larger screens */
+    font-weight: bold;
+    color: white;
+    
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Adjust font size for smaller screens */
+@media (max-width: 1200px) {
+    .carousel-caption h2 {
+        font-size: 6vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-caption h2 {
+        font-size: 8vw;
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel-caption h2 {
+        font-size: 10vw;
+    }
+}
+.erp-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+    margin: 50px auto;
+    background-color: #f5f5f5;
+    border-radius: 12px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    min-height: 100%;
+}
+
+.erp-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    animation: slideIn 1.2s ease-in-out;
+    
+}
+
+.erp-content img {
+    max-width: 100%;
+    border-radius: 12px;
+    margin-bottom: 20px;
+     /* Set height to match text section */
+    object-fit: cover;
+}
+
+.erp-content h1 {
+    color: #025add;
+    font-size: 24px; /* Reduced size */
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.erp-content p.subtitle {
+    color: #666;
+    font-size: 14px; /* Reduced size */
+    margin-bottom: 40px;
+    font-weight: 500;
+}
+
+.erp-feature {
+    margin-bottom: 30px;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.erp-feature h2 {
+    color: #025add;
+    font-size: 18px; /* Reduced size */
+    margin-bottom: 4px;
+    font-weight: bold;
+}
+
+.erp-feature p {
+    color: #555;
+    font-size: 14px; /* Reduced size */
+}
+
+@media (min-width: 768px) {
+    .erp-section {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+
+    .erp-content {
+        flex: 1;
+        max-width: 50%;
+        text-align: left;
+        align-items: flex-start;
+    }
+
+    .erp-content img {
+        margin-bottom: 0;
+        margin-right: 30px;
+        max-width: 80%;
+       
+    }
+
+    .erp-feature {
+        text-align: left;
+        margin-bottom: 20px;
+        
+        line-height: 30px;
+    }
+
+    .erp-feature p {
+        font-size: 17px;
+
+    }
+    .erp-feature ul {
+        line-height: 50px;
+        font-size: 17px;
+
+        
+    }
+
+}
+
+
+.innovation-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    margin-bottom: 20px;
+    min-height: 500px;
+    background-color: #f5f5f5;
+    border-radius: 12px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+}
+
+.innovation-content {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.innovation-content h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.innovation-content p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 10px 0;
+}
+
+.innovation-content .highlight {
+    font-size: 1.2rem;
+    color: #ff8c00; /* Highlight color */
+}
+
+.innovation-image img {
+    max-height: 300px;
+    width: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .innovation-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .innovation-content {
+        padding-right: 0;
+    }
+
+    .innovation-image img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+.erp-feature li {
+    list-style: disc outside none;
+    display: list-item;
+    margin-left: 1em;
+    
+}
+.erp-content h1 {
+    font-size: 40px;
+}
+
+.innovation-content li {
+    list-style: disc outside none;
+    display: list-item;
+    margin-left: 1em;
+    line-height: 30px;
+    
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.service-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.text-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.image-content {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.image-content img {
+    max-width: 100%;
+    height: auto;
+}
+
+.service-section:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 768px) {
+    .service-section {
+        flex-direction: column;
+    }
+
+    .image-content, .text-content {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .image-content img {
+        width: 80%;
+    }
+}
+
+.analytics-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.analytics-container h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    gap: 20px;
+}
+
+.service-box {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.service-box h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.service-box p, .service-box ul {
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.service-box ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.service-box ul li {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.service-box ul li::before {
+    content: '•';
+    color: #d62828;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+    </style>
+  </head>
+  <body>
+    <header id="header" class="header d-flex align-items-center sticked stikcy-menu">
+      <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+        <a href="index.html" class="logo d-flex align-items-center">
+        <img src="https://troktechnology.net/wp-content/uploads/2020/08/trok_logo_190_x_80.png" alt="logo">
+        </a>
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a href="index.html" class="">Home</a></li>
+            <li><a href="index.html#services" class="">Services</a></li>
+            
+            <li><a href="training.html" class="">Training</a></li>
+            <li><a href="index.html#team" class="">Team</a></li>
+            <li class="dropdown">
+              <a href="#"><span>Menu</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+              <ul>
+                <li><a href="about.html">About Us</a></li>
+                
+                <li><a href="training.html">Training</a></li>
+               
+              </ul>
+            </li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+        <!-- .navbar -->
+        <a href="contact.html" class="btn-get-started hide-on-mobile">Get Quotes</a>
+        <button id="darkmode-button"><i class="bi bi-moon-fill"></i></button>
+        <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+        <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+      </div>
+    </header>
+    <!-- End Header -->
+    <!--  Hero Section  -->
+   
+       <!-- Carousel Section -->
+       <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="carousel-image image1"></div>
+                <div id="caption1" class="carousel-caption d-none d-md-block" style="min-width: 100vh;">
+                    <h2>SAP C/4HANA and SAP S/4HANA</h2>
+                    <div style="padding: 20px;">
+                    
+                   
+                    </div>
+                  </div>
+            </div>
+           
+        </div>
+       
+    </div>
+    
+    
+    
+
+  <!-- Hero Section -->
+ 
+
+
+    <!-- End Hero Section -->
+    <main id="main">
+      <!-- Start Service Section -->
+      
+
+     <div class="container" style="margin-top:10%;">
+        <!-- SAP Business One Solutions Section -->
+        <div class="service-section" data-aos='fade-up'>
+            <div class="text-content">
+                <h2>SAP BUSINESS ONE SOLUTIONS:</h2>
+                <p>We integrate your end-to-end business processes and fuels growth with this complete, world-class ERP application designed and priced for small businesses.</p>
+                <ul>
+                    <li>SAP Business All-in-One Solutions – Grow profitably, streamline operations, and boost financial performance with these comprehensive, industry-specific solutions for fast-growing SMEs</li>
+                    <li>SAP Business ByDesign – Get the benefits of a large-scale business management solution with this software-as-a-service (SaaS) solution for SMEs and subsidiaries of bigger firms</li>
+                    <li>Mobile Software Solutions – Transform your organization. Give your employees secure mobile access to the information and systems they need most – anytime, anywhere, and on any device</li>
+                </ul>
+            </div>
+            <div class="image-content">
+                <img src="https://troktechnology.net/wp-content/uploads/2020/12/chair-1-1.jpg" alt="Yellow Chair">
+            </div>
+        </div>
+
+        <!-- SAP Predefined Solutions Section -->
+        <div class="service-section erp-section" style="margin-top:10%;" data-aos='fade-up'>
+            <div class="image-content" >
+                <img src="https://troktechnology.net/wp-content/uploads/2020/12/leverage.png" alt="SAP Bulb">
+            </div>
+            <div class="text-content">
+                <h2>SAP Predefined Solutions:</h2>
+                <p>SAP Predefined Solutions simplify delivery making the deployment quick, predictable, and affordable, unlike SAP traditional implementations that have been slow and costly.</p>
+                <ul>
+                    <li>Master Data Governance</li>
+                    <li>SAP Employee and Manager Self Service</li>
+                    <li>SAP HANA Operational Reporting and SAP HANA Live</li>
+                    <li>Mobile Platform</li>
+                    <li>Treasury & Risk Management</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- SAP Support Services Section -->
+        <div class="service-section" style="margin-top:10%;" data-aos='fade-up'>
+            <div class="text-content">
+                <h2>SAP SUPPORT SERVICES:</h2>
+                <p>Provides Application Management Services (AMS) to the clients with on and off-shore models. Our services include:</p>
+                <ul>
+                    <li>Application Services</li>
+                    <li>Operational Services</li>
+                    <li>Service Management</li>
+                </ul>
+            </div>
+            <div class="image-content">
+                <img src="https://troktechnology.net/wp-content/uploads/2020/12/why-choose-sap.jpg" alt="SAP Support">
+            </div>
+        </div>
+    </div>
+      
+      
+    <div class="analytics-container" style="margin-bottom: 5%;" >
+    <h2 style="font-weight: 900;">SAP BW/BI and Analytics Services:</h2>
+    <div class="services-grid">
+        <!-- SAP BW Section -->
+        <div class="service-box" data-aos='fade-up'>
+            <h3>SAP BW</h3>
+            <p>Turn Big Data into a valuable asset with SAP solutions, companies can accelerate how they acquire, analyze, and act on insights; deliver those insights across all their people and processes; and achieve breakout business results.</p>
+            <p>Our range of SAP Business Warehouse/Business Intelligence and Analytical services includes:</p>
+        </div>
+        
+        <!-- BI/Data Services Section -->
+        <div class="service-box" data-aos='fade-up'>
+            <h3>BI/Data Services</h3>
+            <ul>
+                <li>BI Reporting Tool Set Strategy</li>
+                <li>BO Deployments/Data Migration</li>
+                <li>Managing Report Proliferation</li>
+                <li>BOBJ & BODS Instructor led Training</li>
+            </ul>
+        </div>
+
+        <!-- BW Application Section -->
+        <div class="service-box" data-aos='fade-up'>
+            <h3>BW APPLICATION</h3>
+            <ul>
+                <li>Enterprise Reporting Strategy & Architecture</li>
+                <li>End to End Green Field implementations</li>
+                <li>BW on HANA Migrations</li>
+                <li>BW Upgrades and Performance Tuning</li>
+                <li>BW Application Maintenance and Support (AMS)</li>
+                <li>BW Advisory services – Due diligence, Governance & Establishing COE</li>
+                <li>BW Instructor Led Training</li>
+            </ul>
+        </div>
+
+        <!-- HANA Section -->
+        <div class="service-box" data-aos='fade-up'>
+            <h3>HANA</h3>
+            <ul>
+                <li>Strategy and Roadmap</li>
+                <li>Delivering Effective Solutions using Business Suite on HANA</li>
+                <li>Reporting Integration with BOBJ Tool set</li>
+                <li>Administration and AMS</li>
+                <li>Training</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<br>
+
+      
+
+ 
+    
+    
+   
+      <!-- End Our Team Section -->
+      <!--  Frequently Asked Questions Section  -->
+    
+      <!-- End Frequently Asked Questions Section -->
+      <!--  Call To Action Section  -->
+   
+      <!-- End Call To Action Section -->
+      <!--  Recent Blog Posts Section  -->
+      
+      <!-- End Recent Blog Posts Section -->
+      <!-- Start Contact Section -->
+     
+      <!-- End Contact Section -->
+    </main>
+    <!-- End #main -->
+    <!--  Footer  -->
+    <footer id="footer" class="footer-section">
+      <div class="container">
+        <div class="footer-content pt-5 pb-5">
+          <div class="row">
+            <div class="col-xl-4 col-lg-4 mb-50">
+              <div class="footer-widget">
+                <div class="footer-logo">
+                  <a href="index-2.html" class="logo d-flex align-items-center">
+                  <img src="https://troktechnology.net/wp-content/uploads/2020/08/trok_logo_190_x_80.png" alt="logo">
+                  </a>
+                </div>
+                <div class="footer-text">
+                  <p>Trok Technology offers the best Service
+                  </p>
+                </div>
+                <div class="footer-social-icon">
+                  <span>Follow us</span>
+                  <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                  <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                  <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                  <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-12 footer-column">
+              <div class="service-widget footer-widget">
+                <div class="footer-widget-heading">
+                  <h3>Services</h3>
+                </div>
+                <ul class="list">
+                  <li><a href="appdev.html">Mobile Development</a></li>
+                  <li><a href="appdev.html">App Developemnt</a></li>
+                  <li><a href="webservice.html">Web & CMS Development</a></li>
+                  <li><a href="uiux.html">UI/UX Design</a></li>
+                  <li><a href="sap.html">SAP</a></li>
+
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-12 footer-column">
+              <div class="service-widget footer-widget">
+                <div class="footer-widget-heading">
+                  <h3>Information</h3>
+                </div>
+                <ul class="list">
+                  <li><a href="about.html">About Us</a></li>
+               
+                  <li><a href="index.html#team">Team</a></li>
+                  
+                  
+                  <li><a href="training.html">Training</a></li>
+                 
+                  
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+              <div class="contact-widget footer-widget">
+                <div class="footer-widget-heading">
+                  <h3>Contacts</h3>
+                </div>
+                <div class="footer-text">
+                  <p><i class="bi bi-geo-alt-fill mr-15"></i> 7315 Morse Loop, Mobile, AL 36619</p>
+                  <p><i class="bi bi-telephone-inbound-fill mr-15"></i> Tel: +1-877-532-5504</p>
+                  <p><i class="bi bi-envelope-fill mr-15"></i> Email:-info@troktechnology.net</p>
+                </div>
+              </div>
+              <div class="footer-widget">
+                <div class="footer-widget-heading">
+                  <h3>Newsletter</h3>
+                </div>
+                <div class="footer-text mb-25">
+                  <p>Don't miss to subscribe to our new feeds, kindly fill the form below.</p>
+                </div>
+                <div class="subscribe-form">
+                  <form action="#">
+                    <input type="text" placeholder="Email Address">
+                    <button><i class="bi bi-telegram"></i></button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xl-6 col-lg-6 text-left text-lg-left">
+              <div class="copyright-text">
+                <p>Trok Technology © 2024 - Designed by <a href="">Us</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+    <a href="#" class="scroll-top d-flex align-items-center justify-content-center active">
+    <i class="bi bi-arrow-up-short"></i>
+    </a>
+    <div id="preloader"></div>
+    <!-- Vendor JS Files -->
+    <script src="assets/javascripts/jquery.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/javascripts/plugins.js"></script>
+    <script src="assets/javascripts/purecounter_vanilla.js"></script>
+    <script src="assets/javascripts/validator.min.js"></script>
+    <script src="assets/javascripts/contactform.js"></script>
+    <script src="assets/javascripts/particles.min.js"></script>
+    <script src="assets/javascripts/script.js"></script>
+    <script>
+    // Wait for the DOM to be fully loaded
+      document.addEventListener('DOMContentLoaded', function () {
+          // Get the carousel element
+          var carousel = document.getElementById('heroCarousel');
+          
+          // Initialize Bootstrap Carousel
+          var carouselInstance = new bootstrap.Carousel(carousel, {
+              interval: 6000, // Adjust interval as needed (in milliseconds)
+              pause: false, // Remove pause on hover if not needed
+          });
+
+          // Update caption on slide change
+          carousel.addEventListener('slide.bs.carousel', function (event) {
+              var currentSlide = event.relatedTarget; // Get the current slide element
+              var carouselCaptions = currentSlide.querySelectorAll('.carousel-caption'); // Find all captions within the current slide
+
+              // Loop through captions and animate them
+              carouselCaptions.forEach(function (caption) {
+                  caption.classList.add('animated'); // Add animation class (e.g., using Animate.css)
+                  caption.classList.add('fadeInUp'); // Add specific animation effect class (e.g., fadeInUp from Animate.css)
+              });
+          });
+
+          // Remove animation classes after slide transition is complete
+          carousel.addEventListener('slid.bs.carousel', function (event) {
+              var currentSlide = event.relatedTarget;
+              var carouselCaptions = currentSlide.querySelectorAll('.carousel-caption');
+
+              // Delay removal of animation classes to match the animation duration
+              setTimeout(function () {
+                  carouselCaptions.forEach(function (caption) {
+                      caption.classList.remove('animated', 'fadeInUp');
+                  });
+              }, 1000); // Adjust timeout as needed (should match the animation duration)
+          });
+      });
+
+
+    </script>
+    <!-- Template Main JS File -->
+    <script src="assets/javascripts/main.js"></script>
+  </body>
+</html>

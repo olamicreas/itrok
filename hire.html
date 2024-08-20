@@ -1,0 +1,1172 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Trok Technology - IT Solutions & Business Services Multipurpose Responsive Website Template</title>
+    <meta content="" name="HSG - The future of software development ">
+    <meta name="description" content="Technoit - IT Solutions & Business Services Multipurpose Responsive Website Template">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta content="" name="ZRTHEMES">
+    <!-- Favicons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="assets/images/favicon.png" rel="icon">
+    <link href="assets/images/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&amp;family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&amp;family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&amp;display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&amp;display=swap" rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/stylesheets/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <!-- Main CSS File -->
+    <link href="assets/stylesheets/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+/* CSS for carousel image animation */
+.carousel-item {
+    position: relative;
+    height: 100vh; /* Adjust height as needed */
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+  .carousel-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    animation: zoomRotate 200s linear infinite;
+}
+
+
+.carousel-image.image1 {
+    background-image: url('assets/images/image1.jpg');
+}
+
+.carousel-image.image2 {
+    background-image: url('assets/images/image2.jpg');
+}
+
+.carousel-image.image3 {
+    background-image: url('assets/images/image3.jpg');
+}
+
+
+@keyframes zoomRotate {
+    0% {
+        transform: scale(1,1) rotate(0deg);
+    }
+    100% {
+        transform: scale(3.9,3.9) rotate(90deg);
+    }
+}
+
+
+.carousel-image.image2 {
+    background-image: url('https://troktechnology.net/wp-content/uploads/2020/12/jet-engine-371412_1920.jpg');
+}
+
+.carousel-image.image3 {
+    background-image: url('https://troktechnology.net/wp-content/uploads/2020/12/lamp-3489395_1920.jpg');
+}
+
+.carousel-image.image1 {
+    background-image: url('https://troktechnology.net/wp-content/uploads/2020/12/banner-1.jpg');
+    opacity: 0.8;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.carousel-caption h2 {
+    font-size: 4vw; /* Default size for larger screens */
+    font-weight: bold;
+    color: white;
+    
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Adjust font size for smaller screens */
+@media (max-width: 1200px) {
+    .carousel-caption h2 {
+        font-size: 6vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-caption h2 {
+        font-size: 8vw;
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel-caption h2 {
+        font-size: 10vw;
+    }
+}
+.erp-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+    margin: 50px auto;
+    background-color: #f5f5f5;
+    border-radius: 12px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    min-height: 100%;
+}
+
+.erp-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    animation: slideIn 1.2s ease-in-out;
+    
+}
+
+.erp-content img {
+    max-width: 100%;
+    border-radius: 12px;
+    margin-bottom: 20px;
+     /* Set height to match text section */
+    object-fit: cover;
+    height: 450px;
+}
+
+.erp-content h1 {
+    color: #025add;
+    font-size: 24px; /* Reduced size */
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.erp-content p.subtitle {
+    color: #666;
+    font-size: 14px; /* Reduced size */
+    margin-bottom: 40px;
+    font-weight: 500;
+}
+
+.erp-feature {
+    margin-bottom: 30px;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.erp-feature h2 {
+    color: #025add;
+    font-size: 18px; /* Reduced size */
+    margin-bottom: 4px;
+    font-weight: bold;
+}
+
+.erp-feature p {
+    color: #555;
+    font-size: 14px; /* Reduced size */
+}
+
+@media (min-width: 768px) {
+    .erp-section {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+
+    .erp-content {
+        flex: 1;
+        max-width: 50%;
+        text-align: left;
+        align-items: flex-start;
+    }
+
+    .erp-content img {
+        margin-bottom: 0;
+        margin-right: 30px;
+        max-width: 80%;
+       
+    }
+
+    .erp-feature {
+        text-align: left;
+        margin-bottom: 20px;
+        
+        line-height: 30px;
+    }
+
+    .erp-feature p {
+        font-size: 17px;
+
+    }
+    .erp-feature ul {
+        line-height: 50px;
+        font-size: 17px;
+
+        
+    }
+
+}
+
+
+.innovation-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    margin-bottom: 20px;
+    min-height: 500px;
+    background-color: #f5f5f5;
+    border-radius: 12px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+}
+
+.innovation-content {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.innovation-content h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.innovation-content p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 10px 0;
+}
+
+.innovation-content .highlight {
+    font-size: 1.2rem;
+    color: #ff8c00; /* Highlight color */
+}
+
+.innovation-image img {
+    max-height: 300px;
+    width: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .innovation-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .innovation-content {
+        padding-right: 0;
+    }
+
+    .innovation-image img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+.erp-feature li {
+    list-style: disc outside none;
+    display: list-item;
+    margin-left: 1em;
+    
+}
+.erp-content h1 {
+    font-size: 40px;
+}
+
+.innovation-content li {
+    list-style: disc outside none;
+    display: list-item;
+    margin-left: 1em;
+    line-height: 30px;
+    
+}
+
+
+
+.branding-section {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+    background-color: #fff;
+}
+
+.branding-content {
+    grid-column: span 7;
+}
+
+.branding-content h1 {
+    font-size: 3.5rem;  /* Large and bold font size */
+    line-height: 1.1;
+    font-weight: 900;  /* Very bold */
+    color: #000;
+    margin-bottom: 20px;
+    text-transform: uppercase;  /* Uppercase letters */
+}
+
+.branding-content p {
+    font-size: 1rem;  /* Standard paragraph font size */
+    color: #333;
+    line-height: 1.6;  /* Comfortable line height */
+}
+
+.steps-container {
+    grid-column: span 7;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.step {
+    width: calc(50% - 10px);  /* Two columns layout */
+    margin-bottom: 40px;
+
+}
+
+.step h2 {
+    font-size: 1.2rem;  /* Smaller font for step numbers */
+    color: #000;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.step h3 {
+    font-size: 1rem;  /* Same size as paragraph text */
+    color: #000;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-transform: uppercase;  /* Uppercase for subheadings */
+}
+
+.step p {
+    font-size: 0.875rem;  /* Smaller paragraph font */
+    color: #333;
+    line-height: 1.5;
+}
+
+.image-container {
+    grid-column: span 5;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+@media (max-width: 1024px) {
+    .branding-section {
+        grid-template-columns: repeat(8, 1fr);
+        padding: 30px;
+    }
+
+    .branding-content {
+        grid-column: span 8;
+    }
+
+    .steps-container {
+        grid-column: span 8;
+        flex-direction: column;
+       
+    }
+
+    .image-container {
+        grid-column: span 8;
+        justify-content: center;
+        padding-top: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .branding-section {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .branding-content {
+        grid-column: span 1;
+        text-align: center;
+    }
+
+    .branding-content h1 {
+        font-size: 2.5rem;  /* Adjusted for smaller screens */
+    }
+
+    .branding-content p {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .steps-container {
+        grid-column: span 1;
+        flex-direction: column;
+    }
+
+    .step {
+        width: 100%;  /* Single column layout on smaller screens */
+    }
+
+    .image-container {
+        grid-column: span 1;
+        justify-content: center;
+        padding-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .branding-content h1 {
+        font-size: 2rem;  /* Further reduction for very small screens */
+    }
+
+    .branding-content p {
+        font-size: 0.875rem;  /* Adjusted paragraph size */
+    }
+
+    .step h2 {
+        font-size: 1rem;  /* Smaller step number */
+    }
+
+    .step h3 {
+        font-size: 0.875rem;  /* Smaller step title */
+    }
+
+    .step p {
+        font-size: 0.75rem;  /* Smaller paragraph */
+    }
+}
+
+
+
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 40px;
+}
+
+.service-item {
+    flex: 1;
+    margin: 20px;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+
+    
+}
+
+.service-item .icon {
+    margin-right: 20px;
+    font-size: 50px;
+    color: #333;
+}
+
+.service-item .service-content h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #000;
+}
+
+.service-item .service-content p {
+    font-size: 14px;
+    color: #666;
+}
+
+
+
+.dark-background {
+    background-color: #000;
+    color: #fff;
+}
+
+.dark-background .icon {
+    color: #fff;
+}
+
+.dark-background .service-content h3,
+.dark-background .service-content p {
+    color: #fff;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    .services-container {
+        flex-direction: column;
+    }
+
+    .service-item {
+        margin: 10px 0;
+    }
+}
+
+.centered-box {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    text-align: center;
+    margin: 20px;
+}
+
+/* Heading style */
+.centered-box h1 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Paragraph style */
+.centered-box p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Button style */
+.contact-btn {
+    background-color: #007BFF; /* Blue button color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .centered-box {
+        max-width: 90%;
+        padding: 20px;
+    }
+
+    .centered-box h1 {
+        font-size: 1.5rem;
+    }
+
+    .centered-box p {
+        font-size: 0.9rem;
+    }
+
+    .contact-btn {
+        font-size: 0.9rem;
+    }
+}
+
+
+/* Container for the services */
+.service-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Individual service box */
+.service-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.service-box:hover {
+    transform: translateY(-5px);
+}
+
+/* Icon styling */
+.service-icon img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+/* Heading styling */
+.service-box h3 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+/* Paragraph styling */
+.service-box p {
+    font-size: 0.9rem;
+    color: #fff;
+}
+
+/* Background colors for different service boxes */
+.purple {
+    background-color: #6f42c1;
+}
+
+.coral {
+    background-color: #ff6f61;
+}
+
+.blue {
+    background-color: #007bff;
+}
+
+.blue-dark {
+    background-color: #0069d9;
+}
+
+.red {
+    background-color: #dc3545;
+}
+
+.light-blue {
+    background-color: #17a2b8;
+}
+
+.teal {
+    background-color: #20c997;
+}
+
+.orange {
+    background-color: #fd7e14;
+}
+
+.green {
+    background-color: #28a745;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .service-box {
+        padding: 15px;
+    }
+}
+
+.purple {
+    background-color: #6f42c1;
+}
+
+.coral {
+    background-color: #FF7373;
+}
+
+.blue {
+    background-color: #56B6FF;
+}
+
+.blue-dark {
+    background-color: #0069d9;
+}
+
+.red {
+    background-color: #dc3545;
+}
+
+.light-blue {
+    background-color: #17a2b8;
+}
+
+.teal {
+    background-color: #20c997;
+}
+
+.orange {
+    background-color: #fd7e14;
+}
+
+.green {
+    background-color: #28a745;
+}
+
+.icon-box .icon {
+    color: white;
+}
+
+.icon-box .title {
+    color: white;
+}
+.icon-box p{
+    color: #FFFFFF;
+    font-family: "Roboto", Sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+    </style>
+  </head>
+  <body>
+    <header id="header" class="header d-flex align-items-center sticked stikcy-menu">
+      <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+        <a href="index-2.html" class="logo d-flex align-items-center">
+        <img src="https://troktechnology.net/wp-content/uploads/2020/08/trok_logo_190_x_80.png" alt="logo">
+        </a>
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a href="index.html" class="">Home</a></li>
+            <li><a href="index.html#services" class="">Services</a></li>
+           
+            <li><a href="training.html" class="">Training</a></li>
+            <li><a href="index.html#team" class="">Team</a></li>
+            <li class="dropdown">
+              <a href="#"><span>Menu</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+              <ul>
+                <li><a href="about.html">About Us</a></li>
+             
+                <li><a href="training.html">Training</a></li>
+               
+              </ul>
+            </li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+        <!-- .navbar -->
+        <a href="contact.html" class="btn-get-started hide-on-mobile">Get Quotes</a>
+        <button id="darkmode-button"><i class="bi bi-moon-fill"></i></button>
+        <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+        <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+      </div>
+    </header>
+    <!-- End Header -->
+    <!--  Hero Section  -->
+   
+       <!-- Carousel Section -->
+       <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="carousel-image image1"></div>
+                <div id="caption1" class="carousel-caption d-none d-md-block" style="min-width: 100vh;">
+                    <h2 style="color:black;">GET HIRED</h2>
+                    <div style="padding: 20px;">
+                    <p> </p>
+                    <button class="btn btn-primary" onclick='contact();'>Contact Us</button>
+                    </div>
+                  </div>
+            </div>
+           
+        </div>
+       
+    </div>
+    
+    
+    
+
+  <!-- Hero Section -->
+ 
+
+
+    <!-- End Hero Section -->
+    <main id="main">
+      <!-- Start Service Section -->
+      
+        <div class="innovation-section" data-aos="fade-up" data-aos-delay="500">
+            <div class="innovation-image" data-aos="fade-right">
+            <img src="https://troktechnology.net/wp-content/uploads/2020/12/Daco_4967522.png">
+        </div>
+        <br>
+        
+        <div class="centered-box">
+            <h1>Hire Dedicated Top Offshore Developers</h1>
+            <p>We help you set up and manage remote dedicated development teams for you. We provide experienced developers, specialists, IT programmers, and experts for hire to inundate the web with brave ideas.</p>
+            <button class="contact-btn" onclick="contact();">Contact Us</button>
+        </div>
+
+    </div>
+     
+      
+    <br>  
+
+
+<div id="services" class="section">
+    <div class="top-icon-box position-relative">
+        <div class="container position-relative">
+            <div class="section-header">
+                <h2 style="text-transform: uppercase;">
+                    Our Dedicated Hire Services
+                </h2>
+                <p style="color: #d72323;">what do you have offer?</p>
+            </div>
+            <div class="row gy-4">
+                <!-- iPhone App Developers -->
+                <div class="col-xl-4 col-md-4 " data-aos="fade-up" data-aos-delay="100">
+                    <div class="icon-box purple">
+                        <div class="icon"><i class="fa-brands fa-apple"></i></div>
+                        <h4 class="title">iPhone App Developers</h4>
+                        <p>Hire iPhone app developer’s team to give your idea a perfect strike of latest technology and new mobile app benchmark. Hire iPhone App Developers.</p>
+                    </div>
+                </div>
+                <!-- End Icon Box -->
+                
+                <!-- Android App Developers -->
+                <div class="col-xl-4 col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="icon-box coral">
+                        <div class="icon"><i class="fa-brands fa-android"></i></div>
+                        <h4 class="title">Android App Developers</h4>
+                        <p>Android mobile & tablet application is most lucrative for your business. Hire Android developer for your startup or enterprise platform.</p>
+                    </div>
+                </div>
+                <!-- End Icon Box -->
+                
+                <!-- AWS Developers -->
+                <div class="col-xl-4 col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="icon-box blue">
+                        <div class="icon"><i class="fa fa-cloud"></i></div>
+                        <h4 class="title">AWS Developers</h4>
+                        <p>AWS is a collection of more than 200 products & services including cloud computing, data storage, networking, database, analytics, IoT, Machine Learning, Blockchain, Robotics, and much more.</p>
+                    </div>
+                </div>
+                <!-- End Icon Box -->
+                
+                <!-- SAP Developers -->
+                <div class="col-xl-4 col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="icon-box purple">
+                        <div class="icon"><i class="fa fa-briefcase"></i></div>
+                        <h4 class="title">SAP Developers</h4>
+                        <p>We have a strict hiring process to properly screen our SAP developers. In addition to our theoretical tests, talents must show practical, and hands-on SAP development experience.</p>
+                    </div>
+                </div>
+                <!-- End Icon Box -->
+                
+                <!-- FullStack Developers -->
+                <div class="col-xl-4 col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="icon-box coral">
+                        <div class="icon"><i class="fa fa-code"></i></div>
+                        <h4 class="title">FullStack Developers</h4>
+                        <p>Our developers are experts in frontend and backend technologies to get maximum ROI for the development time spent over your web, mobile, or desktop application.</p>
+                    </div>
+                </div>
+                <!-- End Icon Box -->
+                
+                <!-- ASP.Net Developers -->
+                <div class="col-xl-4 col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="icon-box blue">
+                        <div class="icon"><i class="fa fa-cogs"></i></div>
+                        <h4 class="title">ASP.Net Developers</h4>
+                        <p>Hire our certified ASP.Net Developer to bring extended development bandwidth which provides faster turnaround and cost-effective production.</p>
+                    </div>
+                </div>
+                <!-- End Icon Box -->
+                
+                <!-- UI/UX Design -->
+                <div class="col-xl-4 col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="icon-box blue">
+                        <div class="icon"><i class="fa fa-paint-brush"></i></div>
+                        <h4 class="title">UI/UX Design</h4>
+                        <p>Fully responsive, mobile-first, completely optimized, SEO friendly, and pixel perfection is what we strive for with our Front-end development services. Our Front-end developers ensure amazing performance across diverse browser resolutions, devices, and operating systems.</p>
+                    </div>
+                </div>
+                <!-- End Icon Box -->
+                
+                <!-- Web Development -->
+                <div class="col-xl-4 col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="icon-box purple">
+                        <div class="icon"><i class="fa fa-globe"></i></div>
+                        <h4 class="title">Web Development</h4>
+                        <p>A website is not just a digital asset, it is an undisputed backbone of your business and your crucial sales asset. We are not some cheap low-quality readymade website shop or template shop; we are a custom website development company.</p>
+                    </div>
+                </div>
+                <!-- End Icon Box -->
+                
+                <!-- WordPress Developers -->
+                <div class="col-xl-4 col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="icon-box coral">
+                        <div class="icon"><i class="fa-brands fa-wordpress"></i></div>
+                        <h4 class="title">WordPress Developers</h4>
+                        <p>We are a leading WordPress development company providing turnkey services and a one-stop shop for all your design, development, and maintenance business needs.</p>
+                    </div>
+                </div>
+                <!-- End Icon Box -->
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+    <!-- New Service Boxes -->
+
+
+
+
+ 
+    
+    <br>
+ 
+    
+         <div class="innovation-section" data-aos="fade-up" data-aos-delay="500" style="background-color: white;">
+            <div class="erp-content" data-aos="fade-right">
+            <img src="https://images.pexels.com/photos/1228497/pexels-photo-1228497.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2">
+        </div>
+        <br>
+        <div class="innovation-content container">
+            <h2 style="text-transform:uppercase;">Benefits To Hire Dedicated Developers From us:</h2>
+            <p>
+               We have is a pool of skilled, talented and experienced web and mobile developers to convert your ideas in a cost effective way.Below are the benefits that you can cherish by hiring dedicated developers expanding your market by using the mobile platform at its best.
+
+
+            </p>
+            <ul>
+                <li>
+                    Cost-Effective And Flexibility In Hiring Model
+                </li>
+               
+                <li>
+                    100% Source Code Authorization
+                </li>
+                <li>
+                    Transparent Communication Channel During Project Development
+                </li>
+
+                <li>
+                    Adherence To Project Timeline
+                </li>
+               
+                <li>
+                    Quality Product Deliverance
+                </li>
+                <li>
+                    Secure Development Area
+                </li>
+
+                 <li>
+                    Skilled And Experienced Developers And Development Team
+                </li>
+
+                <li>
+                    Track Team Performance With Project Management Tools
+                </li>
+               
+                <li>
+                    Meetings And Daily Reports To Update Client With Project Status
+                </li>
+                <li>
+                    Flexible Development Timings
+                </li>
+            </ul>
+        </div>
+        
+    </div>
+    
+    
+
+    
+<div class="" style="text-transform: uppercase; background-image: url(https://troktechnology.net/wp-content/uploads/2020/12/img-18.jpg); background-size: cover; background-repeat: no-repeat; color: white; height: 150%;">
+    <div style="padding: 20px; " class="container">
+    <h1 style="margin-top: 10%;" data-aos="fade-left" data-aos-delay="500">When Does Your Business Need To Hire Dedicated Developer?</h1>
+    <hr data-aos="fade-up">
+    <p style="font-size: 16px; margin-bottom: 15%;" data-aos="fade-left" data-aos-delay="500">
+        Your business needs to hire a dedicated developer when you have a complex, long-term project that requires specialized expertise, confidentiality, and consistent attention to drive success.
+
+    </p>
+</div>
+</div>
+   
+      <!-- End Our Team Section -->
+      <!--  Frequently Asked Questions Section  -->
+    
+      <!-- End Frequently Asked Questions Section -->
+      <!--  Call To Action Section  -->
+   
+      <!-- End Call To Action Section -->
+      <!--  Recent Blog Posts Section  -->
+      
+      <!-- End Recent Blog Posts Section -->
+      <!-- Start Contact Section -->
+     
+      <!-- End Contact Section -->
+    </main>
+    <!-- End #main -->
+    <!--  Footer  -->
+    <footer id="footer" class="footer-section">
+      <div class="container">
+        <div class="footer-content pt-5 pb-5">
+          <div class="row">
+            <div class="col-xl-4 col-lg-4 mb-50">
+              <div class="footer-widget">
+                <div class="footer-logo">
+                  <a href="index.html" class="logo d-flex align-items-center">
+                  <img src="https://troktechnology.net/wp-content/uploads/2020/08/trok_logo_190_x_80.png" alt="logo">
+                  </a>
+                </div>
+                <div class="footer-text">
+                  <p>Trok Technology offers the best Service
+                  </p>
+                </div>
+                <div class="footer-social-icon">
+                  <span>Follow us</span>
+                  <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                  <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                  <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                  <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-12 footer-column">
+              <div class="service-widget footer-widget">
+                <div class="footer-widget-heading">
+                  <h3>Services</h3>
+                </div>
+                <ul class="list">
+                  <li><a href="appdev.html">Mobile Development</a></li>
+                  <li><a href="appdev.html">App Developemnt</a></li>
+                  <li><a href="webservice.html">Web & CMS Development</a></li>
+                  <li><a href="uiux.html">UI/UX Design</a></li>
+                  <li><a href="sap.html">SAP</a></li>
+
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-12 footer-column">
+              <div class="service-widget footer-widget">
+                <div class="footer-widget-heading">
+                  <h3>Information</h3>
+                </div>
+                <ul class="list">
+                  <li><a href="about.html">About Us</a></li>
+               
+                  <li><a href="index.html#team">Team</a></li>
+                  
+                 
+                  <li><a href="training.html">Training</a></li>
+              
+                  
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+              <div class="contact-widget footer-widget">
+                <div class="footer-widget-heading">
+                  <h3>Contacts</h3>
+                </div>
+                <div class="footer-text">
+                  <p><i class="bi bi-geo-alt-fill mr-15"></i> 7315 Morse Loop, Mobile, AL 36619</p>
+                  <p><i class="bi bi-telephone-inbound-fill mr-15"></i> Tel: +1-877-532-5504</p>
+                  <p><i class="bi bi-envelope-fill mr-15"></i> Email:-info@troktechnology.net</p>
+                </div>
+              </div>
+              <div class="footer-widget">
+                <div class="footer-widget-heading">
+                  <h3>Newsletter</h3>
+                </div>
+                <div class="footer-text mb-25">
+                  <p>Don't miss to subscribe to our new feeds, kindly fill the form below.</p>
+                </div>
+                <div class="subscribe-form">
+                  <form action="#">
+                    <input type="text" placeholder="Email Address">
+                    <button><i class="bi bi-telegram"></i></button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xl-6 col-lg-6 text-left text-lg-left">
+              <div class="copyright-text">
+                <p>Trok Technology © 2024 - Designed by <a href="">Us</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+    <a href="#" class="scroll-top d-flex align-items-center justify-content-center active">
+    <i class="bi bi-arrow-up-short"></i>
+    </a>
+    <div id="preloader"></div>
+    <!-- Vendor JS Files -->
+    <script src="assets/javascripts/jquery.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/javascripts/plugins.js"></script>
+    <script src="assets/javascripts/purecounter_vanilla.js"></script>
+    <script src="assets/javascripts/validator.min.js"></script>
+    <script src="assets/javascripts/contactform.js"></script>
+    <script src="assets/javascripts/particles.min.js"></script>
+    <script src="assets/javascripts/script.js"></script>
+    <script>
+    // Wait for the DOM to be fully loaded
+      document.addEventListener('DOMContentLoaded', function () {
+          // Get the carousel element
+          var carousel = document.getElementById('heroCarousel');
+          
+          // Initialize Bootstrap Carousel
+          var carouselInstance = new bootstrap.Carousel(carousel, {
+              interval: 6000, // Adjust interval as needed (in milliseconds)
+              pause: false, // Remove pause on hover if not needed
+          });
+
+          // Update caption on slide change
+          carousel.addEventListener('slide.bs.carousel', function (event) {
+              var currentSlide = event.relatedTarget; // Get the current slide element
+              var carouselCaptions = currentSlide.querySelectorAll('.carousel-caption'); // Find all captions within the current slide
+
+              // Loop through captions and animate them
+              carouselCaptions.forEach(function (caption) {
+                  caption.classList.add('animated'); // Add animation class (e.g., using Animate.css)
+                  caption.classList.add('fadeInUp'); // Add specific animation effect class (e.g., fadeInUp from Animate.css)
+              });
+          });
+
+          // Remove animation classes after slide transition is complete
+          carousel.addEventListener('slid.bs.carousel', function (event) {
+              var currentSlide = event.relatedTarget;
+              var carouselCaptions = currentSlide.querySelectorAll('.carousel-caption');
+
+              // Delay removal of animation classes to match the animation duration
+              setTimeout(function () {
+                  carouselCaptions.forEach(function (caption) {
+                      caption.classList.remove('animated', 'fadeInUp');
+                  });
+              }, 1000); // Adjust timeout as needed (should match the animation duration)
+          });
+      });
+
+
+    </script>
+    <!-- Template Main JS File -->
+    <script src="assets/javascripts/main.js"></script>
+  </body>
+</html>
