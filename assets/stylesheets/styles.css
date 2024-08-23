@@ -1042,15 +1042,23 @@ section {background: var(--light-color);}
 # Call To Action Section
 --------------------------------------------------------------*/
 .call-to-action {
-  background: url(../images/hero-bg.png) center left;
-  background-size: cover;
+  background: url('../images/hero-bg.png') center left no-repeat !important;
+  background-size: cover !important;
   padding: 150px 0px;
   border-radius: 0px;
   overflow: hidden;
   position: relative;
-  background-attachment: fixed;
+  background-color: #000; /* Fallback color */
 }
 
+
+
+@media only screen and (max-width: 768px) {
+  .call-to-action {
+    background: url('../images/hero-bg.png') center center no-repeat !important;
+    background-size: cover !important;
+  }
+}
 .call-to-action h3 {
   color: #fff;
   font-size: 28px;
